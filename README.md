@@ -1,4 +1,4 @@
-# [Project Name: e.g., Medicaid Predictive Modeling & AI Strategy]
+# [Project Name: COVID-19 Data Analysis: Predicting Continent from Country-Level Health Statistics]
 
 ## 🎯 Overview
 A brief (2-3 sentence) summary of what this project does. 
