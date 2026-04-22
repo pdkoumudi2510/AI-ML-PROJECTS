@@ -1,18 +1,38 @@
-# COVID-19 Health Analytics: Predictive Modeling & AI Strategy
+# COVID-19 Data Analysis and Machine Learning Project
 
-## 🎯 Project Overview
-This project demonstrates the application of machine learning to classify geographic continents based on global COVID-19 health metrics. It serves as a showcase for high-integrity data processing and the strategic integration of AI within public health policy frameworks.
+## 🎯 Overview
+This project provides a comprehensive analysis of global COVID-19 trends. It covers the full lifecycle of a data project: from data ingestion and cleaning to summary statistics, interactive visualizations, and predictive machine learning models.
 
-## 🚀 Key Technical Features
-* **Data Cleaning & Imputation:** Handled missing values in health metrics and removed duplicate records to ensure data quality.
-* **Model Benchmarking:** Comparative analysis between **Logistic Regression** and **Random Forest** classifiers.
-* **Ethical Governance:** Applied the **ADKAR** and **Kotter’s 8-Step** change management models to guide responsible AI integration.
+## 🚀 Features
+* **Data Loading:** Efficiently handles `covid_19.csv` with flexible options for Colab environment or local storage.
+* **Summary Statistics (Part A):** Generates tabular summaries of total cases, deaths, and population by continent.
+* **Interactive Visualizations (Part B):** Creates distinct, color-consistent pie charts visualizing the global distribution of health metrics.
+* **Machine Learning (Part C):** Implements a classification task to predict **high_fatality** status.
+    * **Target Variable:** `high_fatality` (Case Fatality Rate above training-set median).
+    * **Features:** Population, Cases, Recovered, Tests, Recovery Rate, and more.
+    * **Models:** Benchmarking of Logistic Regression vs. HistGradientBoosting (Random Forest) classifiers.
 
-## 📊 Performance Results
-* **Top Performer:** The **Random Forest** model successfully identified all 6 continent categories.
-* **Key Insight:** Logistic Regression exhibited a "Majority Class Bias," frequently misidentifying regions as Africa. The Random Forest ensemble approach corrected this, providing much higher reliability for regional health predictions.
+## 📊 Evaluation & Results
+The project provides full performance metrics, including Accuracy, F1-scores, and Classification Reports.
+* **Visual Validation:** Includes Confusion Matrices to identify model bias and classification accuracy.
 
-## 🛠 Technical Stack
-* **Language:** Python 3.x
-* **Libraries:** Pandas, Scikit-Learn, Matplotlib, Seaborn
-* **Frameworks:** ADKAR Change Management, Kotter’s 8-Step Leadership Model
+![Confusion Matrix Comparison](image_71f8e1.png)
+
+## 📖 How to Use
+1. **Upload to Colab:** Open the `.ipynb` file in Google Colab (**File → Upload notebook**).
+2. **Data Preparation:** Ensure `covid_19.csv` is available in the `/content/` directory.
+3. **Run All Cells:** Go to **Runtime → Run all** to execute the analysis and generate reports.
+
+## 📂 Project Structure
+* **Setup:** Library imports and environment configuration.
+* **Part A (Load Data):** Initial ingestion and handling of `covid_19.csv`.
+* **Part B (Summary):** Aggregation of statistics (Exports `continent_covid_summary.csv`).
+* **Part C (Visuals):** Generation of geospatial pie charts (Exports `continent_pie_charts.png`).
+* **Part D (ML):** Feature engineering, training, and confusion matrix visualization.
+
+## 🛠 Technologies Used
+* **Language:** Python
+* **Data Manipulation:** Pandas, NumPy
+* **Machine Learning:** Scikit-learn
+* **Visualizations:** Matplotlib, Seaborn
+* **Strategic Frameworks:** ADKAR Change Management, Kotter’s 8-Step Model
